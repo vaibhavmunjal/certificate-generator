@@ -1,0 +1,45 @@
+span.draggable {
+    display: inline-block;
+}
+span.draggable:empty::before {
+    content: 'Add Text';
+    display: inline-block;
+}
+span.draggable[contenteditable]:empty:focus::before {
+    content: 'Start typing';
+}
+
+ul {
+    list-style-type: none;
+    margin: 20px;
+    background-color: aqua;
+}
+
+li {
+    display: inline-block;
+    font-weight: 100px;
+    font-size: 20px;
+    cursor: default;
+    border-right: 1px solid #ccc;
+    padding: 10px 20px;
+}
+
+section {
+    width: 8.3in;
+    height: 5.8in;
+    border: 3px dotted cyan;
+    border-radius: 25px;
+    padding: 10px;
+    margin: auto;
+}
+
+select {
+    font-size: 20px;
+    -webkit-appearance: none;
+    width: 100%;
+    border: none;
+}
+
+.draggabble {
+    position: relative;
+}
